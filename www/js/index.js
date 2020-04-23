@@ -29,7 +29,7 @@ var app = {
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
         alert("Try ...");
-/*        navigator.camera.getPicture(this.onDeviceReady.onSuccess, this.onDeviceReady.onFail, {
+        navigator.camera.getPicture(this.onDeviceReady.onSuccess, this.onDeviceReady.onFail, {
           quality: 50,
           destinationType: Camera.DestinationType.DATA_URL
         });
@@ -43,7 +43,7 @@ var app = {
        function onFail(msg) {
          alert("Fault: " + msg);
        }
-*/
+
     },
 
     // Update DOM on a Received Event

@@ -15,13 +15,17 @@
   "dependencies": {
     "cordova-android": "^8.1.0",
     "cordova-plugin-battery-status": "^2.0.3",
+    "cordova-plugin-camera": "^4.1.0",
     "cordova-plugin-qrscanner": "^3.0.1"
   },
   "cordova": {
     "plugins": {
       "cordova-plugin-qrscanner": {},
       "cordova-plugin-whitelist": {},
-      "cordova-plugin-battery-status": {}
+      "cordova-plugin-battery-status": {},
+      "cordova-plugin-camera": {
+        "ANDROID_SUPPORT_V4_VERSION": "27.+"
+      }
     },
     "platforms": [
       "android"
