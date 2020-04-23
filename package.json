@@ -14,12 +14,14 @@
   "license": "Apache-2.0",
   "dependencies": {
     "cordova-android": "^8.1.0",
+    "cordova-plugin-battery-status": "^2.0.3",
     "cordova-plugin-qrscanner": "^3.0.1"
   },
   "cordova": {
     "plugins": {
       "cordova-plugin-qrscanner": {},
-      "cordova-plugin-whitelist": {}
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-battery-status": {}
     },
     "platforms": [
       "android"
