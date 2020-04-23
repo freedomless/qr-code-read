@@ -28,6 +28,20 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
+
+        navigator.camera.getPicture(this.onDeviceReady.onSuccess, this.onDeviceReady.onFail, {
+          quality: 50,
+          destinationType: Camera.DestinationType.DATA_URL
+        });
+
+       function onSuccess(imageData) {
+         let image = document.getElementById('myImage');
+         image.src = "data:image/jpeg;base64," + imageData;
+       }
+
+       function onFail(msg) {
+         alert("Fault: " + msg);
+       }
     },
 
     // Update DOM on a Received Event
