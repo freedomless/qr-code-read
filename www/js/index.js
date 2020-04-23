@@ -28,7 +28,7 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
-
+        alert("Try ...");
 /*        navigator.camera.getPicture(this.onDeviceReady.onSuccess, this.onDeviceReady.onFail, {
           quality: 50,
           destinationType: Camera.DestinationType.DATA_URL
