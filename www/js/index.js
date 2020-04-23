@@ -29,7 +29,7 @@ var app = {
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
 
-        navigator.camera.getPicture(this.onDeviceReady.onSuccess, this.onDeviceReady.onFail, {
+/*        navigator.camera.getPicture(this.onDeviceReady.onSuccess, this.onDeviceReady.onFail, {
           quality: 50,
           destinationType: Camera.DestinationType.DATA_URL
         });
@@ -43,6 +43,7 @@ var app = {
        function onFail(msg) {
          alert("Fault: " + msg);
        }
+*/
     },
 
     // Update DOM on a Received Event
@@ -51,8 +52,8 @@ var app = {
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
 
-        // listeningElement.setAttribute('style', 'display:none;');
-        // receivedElement.setAttribute('style', 'display:block;');
+        listeningElement.setAttribute('style', 'display:none;');
+        receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
     }
